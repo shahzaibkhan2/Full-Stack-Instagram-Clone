@@ -1,4 +1,5 @@
 import { apiVars } from "@/constants/apiVars";
+import useGetAllPosts from "@/hooks/usePost/useGetAllPosts";
 import { setAuthUser } from "@/store/features/authSlice";
 import { setPosts, setSelectedPost } from "@/store/features/postSlice";
 import { createContext, useRef, useState } from "react";
@@ -87,6 +88,7 @@ const AuthContextProvider = ({ children }) => {
             passwordRef.current.value = "";
             setIsLoggedIn(true);
             dispatch(setAuthUser(user));
+            useGetAllPosts();
             // navigate("/");
           } else if (authType === "Logout") {
             toast.success(successMsg);
