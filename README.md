@@ -5,3 +5,6 @@ I am building a Full Stack (MERN) Instagram Clone Website which is functional, r
 Github, Context Api, Redux Toolkit, ECMAScript, ExpressJs, NodeJs, Mongoose, MongoDB and ReactJs.
 # Landing Page
 ![HOME PAGE](frontend/src/assets/instagramOne.jpg)
+
+# Post Creation
+![CREATE POST](frontend/src/assets/instagramTwo.jpg)
