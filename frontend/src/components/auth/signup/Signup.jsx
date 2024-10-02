@@ -5,6 +5,7 @@ import { Checkbox } from "@/components/ui/checkbox";
 import { useAuthContext } from "@/hooks/useAuth/useAuthContext";
 import { Loader2 } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
+import postagram from "@/assets/postagramDark.png";
 
 const Signup = () => {
   const { usernameRef, emailRef, passwordRef, authSubmitHandler, authLoading } =
@@ -19,8 +20,8 @@ const Signup = () => {
         }}
         className="flex flex-col shadow-lg p-8 gap-5"
       >
-        <div className="my-4">
-          <h1 className="font-bold text-2xl text-center">Logo</h1>
+        <div className="flex flex-col items-center justify-center my-2">
+          <img src={postagram} alt="logo" className="object-cover w-44" />
           <p className="text-md text-[#737373] text-center mt-2 max-w-80">
             Sign up to explore more about your friends and family
           </p>
